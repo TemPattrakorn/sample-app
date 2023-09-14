@@ -1,0 +1,107 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,182,193,50) ;
+}
+.logo a img{
+    border-radius: 20%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+.sidebar a i {
+    font-size: 40px;
+    color: black; 
+}
+
+
+.menu {
+    margin-right: 15px;
+}
+
+
+.menu a i {
+    font-size: 30px;
+    color: black; 
+}
+
+
+.notification {
+    margin-right: 15px;
+}
+
+.notification a i {
+    font-size: 30px;
+    color: red; 
+}
+
+.userinfo {
+    margin-right: 15px;
+}
+
+.userinfo a i {
+    font-size: 40px;
+    color: black; 
+}
+.hero {
+    /* border: 1px solid red; */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    margin-top: 14px;
+    display: grid;
+    row-gap: 10px;
+    height: 60px;
+}
+
+.btn{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    border: 1px solid #333;
+    outline: none;
+    background: greenyellow;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 1px;
+
+
+}
+
+
