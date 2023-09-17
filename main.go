@@ -59,8 +59,8 @@ func insertDocument(client *mongo.Client, document MyDocument) error {
 	return err
 }
 
-/*
 // update
+/*
 func UpdateItem(client *mongo.Client, databaseName, collectionName string, itemID int, updatedItem Item) error {
 	// Get a handle to the MongoDB collection.
 	collection := client.Database(databaseName).Collection(collectionName)
