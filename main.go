@@ -49,6 +49,7 @@ type MyDocument struct {
 	TeacherName string `bson:"teacher-name"`
 }
 
+// insert
 func insertDocument(client *mongo.Client, document MyDocument) error {
 	// Get a handle to the target database and collection
 	collection := client.Database("senior_project").Collection("durable_goods")
@@ -58,10 +59,39 @@ func insertDocument(client *mongo.Client, document MyDocument) error {
 	return err
 }
 
+/*
+// update
+func UpdateItem(client *mongo.Client, databaseName, collectionName string, itemID int, updatedItem Item) error {
+	// Get a handle to the MongoDB collection.
+	collection := client.Database(databaseName).Collection(collectionName)
+
+	// Define the filter to find the item you want to update.
+	filter := bson.M{"_id": itemID}
+
+	// Define the update operation.
+	update := bson.M{
+		"$set": updatedItem, // Use $set to update specific fields.
+	}
+
+	// Specify options for the update operation (optional).
+	options := options.Update().SetUpsert(false)
+
+	// Perform the update operation.
+	_, err := collection.UpdateOne(context.TODO(), filter, update, options)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+*/
+
 //find
 /*
 func
 */
+
+//delete
 
 func formSubmitHandler(client *mongo.Client) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
